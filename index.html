@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUMINA — Where Light Meets Soul</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Poppins:wght@300;400;500;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Canvas Particle Background -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="mainNav">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-mark">✦</span>
+        <span class="logo-text">LUMINA</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#story" class="nav-link">Story</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#interact" class="nav-link">Interact</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#contact" class="btn-nav">Begin Journey</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#story">Story</a>
+      <a href="#experience">Experience</a>
+      <a href="#interact">Interact</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ HERO SECTION ═══════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-ambient"></div>
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+    <div class="hero-glow glow-3"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal-up">
+        <span class="eyebrow-line"></span>
+        <span>A New Era of Digital Experience</span>
+        <span class="eyebrow-line"></span>
+      </div>
+      <h1 class="hero-title reveal-up delay-1">
+        <span class="title-serif">Where</span>
+        <span class="title-bold">Light</span><br/>
+        <span class="title-italic">Becomes</span>
+        <span class="title-outline">Emotion</span>
+      </h1>
+      <p class="hero-subtitle reveal-up delay-2">
+        We craft immersive digital worlds that breathe, feel, and resonate —<br/>
+        transforming the invisible into the unforgettable.
+      </p>
+      <div class="hero-actions reveal-up delay-3">
+        <a href="#story" class="btn-primary">
+          <span>Explore the Journey</span>
+          <span class="btn-arrow">→</span>
+        </a>
+        <a href="#experience" class="btn-ghost">Watch Reel</a>
+      </div>
+    </div>
+
+    <!-- Hero Visual -->
+    <div class="hero-visual reveal-scale delay-2">
+      <div class="hero-img-frame">
+        <div class="frame-glow"></div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReMFroOyhM3dhkSIU3x3H1BLbbAIOA19tG-g&s"
+          alt="Cinematic light abstract"
+          class="hero-img"
+        />
+        <div class="img-overlay"></div>
+        <div class="img-float float-tag">
+          <span class="float-dot"></span>
+          <span>2025 Vanguard Award</span>
+        </div>
+      </div>
+      <!-- Floating glass cards -->
+      <div class="float-card fc-1 glass">
+        <div class="fc-icon">✦</div>
+        <div class="fc-text">
+          <span class="fc-num">340+</span>
+          <span class="fc-label">Projects Alive</span>
+        </div>
+      </div>
+      <div class="float-card fc-2 glass">
+        <div class="fc-icon">◈</div>
+        <div class="fc-text">
+          <span class="fc-num">98%</span>
+          <span class="fc-label">Emotional Impact</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════ MARQUEE STRIP ═══════════════ -->
+  <div class="marquee-strip">
+    <div class="marquee-inner">
+      <span>Immersive Design</span>
+      <span class="marquee-dot">◆</span>
+      <span>Digital Storytelling</span>
+      <span class="marquee-dot">◆</span>
+      <span>Human Connection</span>
+      <span class="marquee-dot">◆</span>
+      <span>Light & Emotion</span>
+      <span class="marquee-dot">◆</span>
+      <span>Award-Winning Craft</span>
+      <span class="marquee-dot">◆</span>
+      <span>Immersive Design</span>
+      <span class="marquee-dot">◆</span>
+      <span>Digital Storytelling</span>
+      <span class="marquee-dot">◆</span>
+      <span>Human Connection</span>
+      <span class="marquee-dot">◆</span>
+      <span>Light & Emotion</span>
+      <span class="marquee-dot">◆</span>
+      <span>Award-Winning Craft</span>
+      <span class="marquee-dot">◆</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════ STORY SECTION ═══════════════ -->
+  <section class="story" id="story">
+    <div class="story-bg-light"></div>
+    <div class="container">
+      <div class="section-label reveal-up">
+        <span class="label-num">01</span>
+        <span class="label-dash">—</span>
+        <span>Our Story</span>
+      </div>
+
+      <div class="story-grid">
+        <div class="story-text-col">
+          <h2 class="section-title reveal-up">
+            Every pixel<br/>
+            <em>carries a</em><br/>
+            <span class="title-accent">heartbeat.</span>
+          </h2>
+          <p class="body-text reveal-up delay-1">
+            We believe that design is not decoration — it is the architecture of feeling. Our studio
+            was born from a singular obsession: to make the digital world feel as alive, warm, and
+            profound as the human experience itself.
+          </p>
+          <p class="body-text reveal-up delay-2">
+            Through the convergence of craft, technology, and empathy, we build experiences that
+            linger long after the screen goes dark.
+          </p>
+          <a href="#experience" class="text-link reveal-up delay-3">
+            Discover our philosophy <span>→</span>
+          </a>
+        </div>
+
+        <div class="story-visual-col">
+          <div class="story-img-cluster">
+            <div class="si-main reveal-scale">
+              <img
+                src="https://png.pngtree.com/png-vector/20260124/ourmid/pngtree-red-heart-with-heartbeat-line-vector-png-image_18601187.webp"
+                alt="Abstract light art"
+              />
+              <div class="si-label glass">
+                <span class="si-year">Since 2019</span>
+              </div>
+            </div>
+            <div class="si-secondary reveal-scale delay-1">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv00I5WIPuLUvwUOC2mFtl6xeZxUzbp7y5Xg&s"
+                alt="Digital experience design"
+              />
+            </div>
+            <div class="si-accent glass reveal-scale delay-2">
+              <span class="accent-num">12</span>
+              <span class="accent-text">Global<br/>Awards</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ EXPERIENCE SECTION ═══════════════ -->
+  <section class="experience" id="experience">
+    <div class="exp-bg"></div>
+    <div class="container">
+      <div class="section-label reveal-up light">
+        <span class="label-num">02</span>
+        <span class="label-dash">—</span>
+        <span>The Experience</span>
+      </div>
+      <div class="exp-header">
+        <h2 class="section-title light reveal-up">
+          Crafted for<br/>
+          <em>the senses.</em>
+        </h2>
+        <p class="body-text light reveal-up delay-1">
+          Three pillars define everything we create —<br/>
+          immersion, emotion, and resonance.
+        </p>
+      </div>
+
+      <div class="exp-cards">
+        <div class="exp-card glass-dark reveal-up delay-1">
+          <div class="ec-num">I</div>
+          <div class="ec-img">
+            <img
+              src="https://thumbs.dreamstime.com/b/immersive-colorful-spiral-tunnel-abstract-abyss-vibrant-energy-cosmic-depth-perfect-digital-art-journey-374705237.jpg"
+              alt="Immersive 3D experience"
+            />
+          </div>
+          <h3 class="ec-title">Immersive Depth</h3>
+          <p class="ec-body">We layer space, light, and motion to create worlds you feel drawn into — not just experiences you observe.</p>
+          <div class="ec-arrow">→</div>
+        </div>
+
+        <div class="exp-card glass-dark reveal-up delay-2">
+          <div class="ec-num">II</div>
+          <div class="ec-img">
+            <img
+              src="https://janefriedman.com/wp-content/uploads/2020/11/robinfarmer_emotionaltruthstorytelling.jpg"
+              alt="Emotional design"
+            />
+          </div>
+          <h3 class="ec-title">Emotional Truth</h3>
+          <p class="ec-body">Every color, every curve, every pause — intentional. We design from emotion first, engineering second.</p>
+          <div class="ec-arrow">→</div>
+        </div>
+
+        <div class="exp-card glass-dark reveal-up delay-3">
+          <div class="ec-num">III</div>
+          <div class="ec-img">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkB21VuWibyTKghOXdqt-Qn5b63Cmog7pYCQ&s"
+              alt="Human connection"
+            />
+          </div>
+          <h3 class="ec-title">Human Resonance</h3>
+          <p class="ec-body">Technology fades. Connection endures. We build the bridge between digital interface and human soul.</p>
+          <div class="ec-arrow">→</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SHOWCASE / WORK SECTION ═══════════════ -->
+  <section class="showcase" id="work">
+    <div class="container">
+      <div class="section-label reveal-up">
+        <span class="label-num">03</span>
+        <span class="label-dash">—</span>
+        <span>Selected Work</span>
+      </div>
+
+      <div class="showcase-grid">
+        <!-- Work Item 1 - Large -->
+        <div class="work-item wi-large reveal-up">
+          <div class="wi-img">
+            <img
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&auto=format&fit=crop&q=80"
+              alt="Brand Identity project"
+            />
+            <div class="wi-overlay">
+              <div class="wi-info">
+                <span class="wi-tag">Brand Identity</span>
+                <h3>Nexus Creative Studio</h3>
+                <p>Full brand universe — identity, motion, digital</p>
+              </div>
+              <div class="wi-link">View Project →</div>
+            </div>
+          </div>
+          <div class="wi-meta">
+            <span class="wi-year">2024</span>
+            <span class="wi-award">✦ Awwwards SOTD</span>
+          </div>
+        </div>
+
+        <!-- Work Item 2 - Portrait -->
+        <div class="work-item wi-portrait reveal-up delay-1">
+          <div class="wi-img">
+            <img
+              src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&auto=format&fit=crop&q=80"
+              alt="Digital installation"
+            />
+            <div class="wi-overlay">
+              <div class="wi-info">
+                <span class="wi-tag">Digital Art</span>
+                <h3>Aurora Installation</h3>
+                <p>Interactive light sculpture</p>
+              </div>
+              <div class="wi-link">View →</div>
+            </div>
+          </div>
+          <div class="wi-meta">
+            <span class="wi-year">2024</span>
+          </div>
+        </div>
+
+        <!-- Work Item 3 - Portrait -->
+        <div class="work-item wi-portrait reveal-up delay-2">
+          <div class="wi-img">
+            <img
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop&q=80"
+              alt="Product experience"
+            />
+            <div class="wi-overlay">
+              <div class="wi-info">
+                <span class="wi-tag">UX Design</span>
+                <h3>Velox Platform</h3>
+                <p>Fintech emotional design</p>
+              </div>
+              <div class="wi-link">View →</div>
+            </div>
+          </div>
+          <div class="wi-meta">
+            <span class="wi-year">2023</span>
+          </div>
+        </div>
+
+        <!-- Work Item 4 - Wide -->
+        <div class="work-item wi-wide reveal-up delay-1">
+          <div class="wi-img">
+            <img
+              src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400&auto=format&fit=crop&q=80"
+              alt="Office space design"
+            />
+            <div class="wi-overlay">
+              <div class="wi-info">
+                <span class="wi-tag">Spatial + Digital</span>
+                <h3>Oasis Workspace Ecosystem</h3>
+                <p>Bridging physical and digital environments seamlessly</p>
+              </div>
+              <div class="wi-link">View Project →</div>
+            </div>
+          </div>
+          <div class="wi-meta">
+            <span class="wi-year">2023</span>
+            <span class="wi-award">✦ FWA of the Year</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ INTERACTION / STATS SECTION ═══════════════ -->
+  <section class="interact" id="interact">
+    <div class="interact-light-1"></div>
+    <div class="interact-light-2"></div>
+    <div class="container">
+      <div class="interact-inner">
+        <div class="interact-text-col">
+          <div class="section-label reveal-up">
+            <span class="label-num">04</span>
+            <span class="label-dash">—</span>
+            <span>By The Numbers</span>
+          </div>
+          <h2 class="section-title reveal-up">
+            Impact that<br/>
+            <em>echoes.</em>
+          </h2>
+          <p class="body-text reveal-up delay-1">
+            Numbers alone don't define us — but they reflect the scale of human lives touched,
+            stories told, and moments made unforgettable.
+          </p>
+
+          <div class="stats-grid">
+            <div class="stat-item reveal-up delay-1">
+              <span class="stat-num" data-target="340">0</span>
+              <span class="stat-suffix">+</span>
+              <span class="stat-label">Projects Delivered</span>
+            </div>
+            <div class="stat-item reveal-up delay-2">
+              <span class="stat-num" data-target="98">0</span>
+              <span class="stat-suffix">%</span>
+              <span class="stat-label">Client Satisfaction</span>
+            </div>
+            <div class="stat-item reveal-up delay-3">
+              <span class="stat-num" data-target="12">0</span>
+              <span class="stat-suffix"></span>
+              <span class="stat-label">Industry Awards</span>
+            </div>
+            <div class="stat-item reveal-up delay-1">
+              <span class="stat-num" data-target="48">0</span>
+              <span class="stat-suffix">M+</span>
+              <span class="stat-label">Lives Reached</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="interact-visual-col">
+          <div class="interact-orb-frame reveal-scale">
+            <div class="orb-ring r1"></div>
+            <div class="orb-ring r2"></div>
+            <div class="orb-ring r3"></div>
+            <div class="orb-core">
+              <img
+                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=700&auto=format&fit=crop&q=80"
+                alt="Abstract universe energy"
+              />
+              <div class="orb-shine"></div>
+            </div>
+          </div>
+
+          <!-- Testimonial card -->
+          <div class="testimonial-card glass reveal-up delay-2">
+            <div class="test-quote">"</div>
+            <p class="test-text">
+              Lumina didn't just redesign our product — they redefined how our users <em>feel</em> about technology.
+            </p>
+            <div class="test-author">
+              <img
+                src="https://media.licdn.com/dms/image/v2/D4E22AQGTa0HuzhTF1w/feedshare-shrink_800/B4EZx1XbtZH8Ag-/0/1771495603709?e=2147483647&v=beta&t=6Vg55zCIIQEUw32jbHegYiZg0i2efkJi_N8zbzADcrM"
+                alt="Client"
+                class="test-avatar"
+              />
+              <div>
+                <span class="test-name">James Alderton</span>
+                <span class="test-role">CEO, Nexus Labs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PROCESS SECTION ═══════════════ -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-label reveal-up">
+        <span class="label-num">05</span>
+        <span class="label-dash">—</span>
+        <span>Our Process</span>
+      </div>
+      <h2 class="section-title reveal-up">
+        How we<br/>
+        <em>bring light</em><br/>
+        <span class="title-accent">to darkness.</span>
+      </h2>
+
+      <div class="process-timeline">
+        <div class="pt-line"></div>
+
+        <div class="pt-step reveal-up delay-1">
+          <div class="pt-num glass">01</div>
+          <div class="pt-content">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAejFnOhOW9-Z79PxtTxaZvL_BW3nYi7kUUw&s"
+              alt="Discovery process"
+              class="pt-img"
+            />
+            <h3>Deep Discovery</h3>
+            <p>We listen with intention. Understanding your vision, your users, your emotional truth.</p>
+          </div>
+        </div>
+
+        <div class="pt-step reveal-up delay-2">
+          <div class="pt-num glass">02</div>
+          <div class="pt-content">
+            <img
+              src="https://c8.alamy.com/comp/2PT8DPW/conceptual-caption-vision-of-the-future-word-written-on-seeing-something-ahead-a-clear-guide-of-action-2PT8DPW.jpg"
+              alt="Creative concept"
+              class="pt-img"
+            />
+            <h3>Conceptual Vision</h3>
+            <p>Ideas crystallize into visual metaphors. We design from the inside out — feeling first.</p>
+          </div>
+        </div>
+
+        <div class="pt-step reveal-up delay-3">
+          <div class="pt-num glass">03</div>
+          <div class="pt-content">
+            <img
+              src="https://img.freepik.com/free-photo/top-view-table-master-with-tools_114579-12246.jpg?semt=ais_hybrid&w=740&q=80"
+              alt="Development crafting"
+              class="pt-img"
+            />
+            <h3>Masterful Craft</h3>
+            <p>Each line of code, each animation frame — executed with the precision of a master artisan.</p>
+          </div>
+        </div>
+
+        <div class="pt-step reveal-up delay-1">
+          <div class="pt-num glass">04</div>
+          <div class="pt-content">
+            <img
+              src="https://direction613.org/wp-content/uploads/2025/10/Launch-a-Legacy.jpg"
+              alt="Launch and beyond"
+              class="pt-img"
+            />
+            <h3>Launch & Legacy</h3>
+            <p>We don't just launch — we ignite. And we stay, to nurture the light we've created together.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CTA SECTION ═══════════════ -->
+  <section class="cta-section" id="contact">
+    <div class="cta-bg-glow"></div>
+    <div class="cta-bg-img">
+      <img
+        src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&auto=format&fit=crop&q=80"
+        alt="Dramatic landscape light"
+      />
+      <div class="cta-img-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content">
+        <div class="section-label light reveal-up">
+          <span class="label-num">06</span>
+          <span class="label-dash">—</span>
+          <span>Begin Your Journey</span>
+        </div>
+        <h2 class="cta-title reveal-up">
+          Ready to make<br/>
+          <em>something</em><br/>
+          <span>unforgettable?</span>
+        </h2>
+        <p class="cta-sub reveal-up delay-1">
+          Your vision deserves more than a template.<br/>
+          Let's craft something that breathes.
+        </p>
+        <div class="cta-actions reveal-up delay-2">
+          <a href="mailto:hello@lumina.studio" class="btn-primary large">
+            <span>Start a Conversation</span>
+            <span class="btn-arrow">→</span>
+          </a>
+          <div class="cta-social">
+            <span>Follow the light:</span>
+            <div class="social-links">
+              <a href="#">Ig</a>
+              <a href="#">Be</a>
+              <a href="#">Tw</a>
+              <a href="#">Li</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-mark">✦</span>
+        <span class="logo-text">LUMINA</span>
+      </div>
+      <p class="footer-copy">© 2026 Dev-Shofiqur | All experiences reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Credits</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <span class="st-arrow">↑</span>
+    <span class="st-label">Top</span>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
